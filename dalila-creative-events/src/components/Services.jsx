@@ -6,7 +6,15 @@ const Services = () => {
     <section id="services" className="services">
       <div className="services__container">
         {services.map((service, index) => (
-          <div className="service-card" key={index}>
+          <div
+            className="service-card"
+            key={index}
+            data-aos={index % 2 === 0 ? "fade-up-right" : "fade-up-left"}
+            data-aos-delay={index * 200}
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+          >
             <img
               src={service.image}
               alt={service.title}

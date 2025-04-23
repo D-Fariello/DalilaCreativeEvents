@@ -5,22 +5,20 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__top">
         <div className="footer__column">
-          <h4>Dalila Creative Events</h4>
+          <h4>Dalila Creative</h4>
+          <p>Based on the French Riviera</p>
           <p>
-            Via Bellezza 23
-            <br />
-            20100 Milan, Italy
+            <a href="mailto:hello@dalilacreative.com">
+              hello@dalilacreative.com
+            </a>
           </p>
           <p>
-            <a href="tel:+390212345678">+39 078</a>
-          </p>
-          <p>
-            <a href="mailto:info@email.it">info@email.it</a>
+            <a href="tel:+33712345678">+33 7 12 34 56 78</a>
           </p>
         </div>
 
         <div className="footer__column">
-          <h4>Menu</h4>
+          <h4>Explore</h4>
           <ul>
             <li>
               <a href="#hero">Home</a>
@@ -29,7 +27,10 @@ const Footer = () => {
               <a href="#services">Services</a>
             </li>
             <li>
-              <a href="#about">About Us</a>
+              <a href="#working">Working With Me</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
             </li>
             <li>
               <a href="#contact">Contact</a>
@@ -38,13 +39,10 @@ const Footer = () => {
         </div>
 
         <div className="footer__column">
-          <h4>Follow Us</h4>
+          <h4>Social</h4>
           <ul className="footer__social">
             <li>
               <a href="#">Instagram</a>
-            </li>
-            <li>
-              <a href="#">Facebook</a>
             </li>
           </ul>
         </div>
@@ -52,7 +50,7 @@ const Footer = () => {
 
       <div className="footer__bottom">
         <p>
-          &copy; {new Date().getFullYear()} Dalila Creative Events – All rights
+          &copy; {new Date().getFullYear()} Dalila Creative — All rights
           reserved
         </p>
       </div>

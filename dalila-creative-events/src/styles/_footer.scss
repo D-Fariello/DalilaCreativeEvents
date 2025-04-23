@@ -1,9 +1,9 @@
 @use './variables' as *;
 
 .footer {
-  background-color: #222;
-  color: white;
-  padding: 4rem 2rem 2rem;
+  background-color: $footer-dark; // #2e2c2b o simile
+  color: #f2f2f2;
+  padding: 5rem 2rem 2rem;
   font-family: $primary-font-family;
 
   &__top {
@@ -14,23 +14,25 @@
     max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 2rem;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   &__column {
-    flex: 1 1 250px;
+    flex: 1 1 260px;
 
     h4 {
       margin-bottom: 1rem;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
+      font-family: $heading-font-family;
       color: $primary-color;
     }
 
     p, a, li {
-      color: #ccc;
       font-size: 0.95rem;
       margin-bottom: 0.5rem;
+      color: rgba(255, 255, 255, 0.7);
       text-decoration: none;
+      transition: color 0.3s ease;
     }
 
     a:hover {
@@ -45,8 +47,8 @@
 
   &__bottom {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     font-size: 0.85rem;
-    color: #888;
+    color: rgba(255, 255, 255, 0.5);
   }
 }
