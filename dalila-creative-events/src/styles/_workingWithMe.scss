@@ -1,0 +1,81 @@
+@use 'variables' as *;
+
+.working {
+  padding: 6rem 2rem;
+  background-color: #ffffff;
+
+  &__heading {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+
+    h2 {
+      font-family: $heading-font-family;
+      font-size: 2.5rem;
+      color: $heading-color;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: $text-muted;
+      font-size: 1.1rem;
+    }
+  }
+
+  &__steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+
+.working-step {
+  position: relative;
+  background-color: white;
+  padding: 3rem 2rem 2rem;
+  border-left: 4px solid $primary-color;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+  }
+
+  &__number {
+    position: absolute;
+    top: -1.2rem;
+    left: -1.2rem;
+    font-size: 4.5rem;
+    font-family: $heading-font-family;
+    color: rgba($primary-color, 0.40);
+    z-index: 0;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $heading-color;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 3px;
+      background-color: $primary-color;
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__description {
+    font-size: 1.1rem;
+    color: $text-muted;
+    line-height: 1.8;
+    position: relative;
+    z-index: 1;
+  }
+}
