@@ -9,11 +9,11 @@ const Footer = () => {
           <p>Based on the French Riviera</p>
           <p>
             <a href="mailto:hello@dalilacreative.com">
-              hello@dalilacreative.com
+              dalila.fariello@gmail.com
             </a>
           </p>
           <p>
-            <a href="tel:+33712345678">+33 7 12 34 56 78</a>
+            <a href="tel:+33712345678">+33 6 35 13 01 87</a>
           </p>
         </div>
 
