@@ -1,0 +1,105 @@
+@use 'variables' as *;
+
+.contact {
+  background: linear-gradient(180deg, #fff, #f7f4f1);
+  padding: 10rem 2rem;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "LET’S TALK";
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 9rem;
+    color: rgba($primary-color, 0.09);
+    font-family: $heading-font-family;
+    letter-spacing: 8px;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  &__container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__intro {
+    margin-bottom: 4rem;
+
+    h2 {
+      font-family: $heading-font-family;
+      font-size: 2.8rem;
+      color: $heading-color;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 1.15rem;
+      color: $text-muted;
+      line-height: 1.9;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+  }
+
+  &__field {
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: $heading-color;
+      font-size: 0.95rem;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      background-color: #fefefe;
+      border: 2px solid rgba($primary-color, 0.2);
+      padding: 1.1rem;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-family: $primary-font-family;
+      color: $text-color;
+      transition: all 0.3s ease;
+
+      &:focus {
+        outline: none;
+        border-color: $primary-color;
+        box-shadow: 0 0 0 5px rgba($primary-color, 0.08);
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 1rem;
+    background-color: transparent;
+    color: $heading-color;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    border: 2px solid $primary-color;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+}
