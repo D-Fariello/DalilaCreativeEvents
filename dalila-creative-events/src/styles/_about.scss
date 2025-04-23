@@ -17,6 +17,10 @@
     letter-spacing: 8px;
     pointer-events: none;
     user-select: none;
+
+    @media (max-width: 1300px) {
+      display: none; // 🔇 nascondi se troppo stretto
+    }
   }
 
   &__container {
@@ -97,6 +101,15 @@
       color: rgba($primary-color, 0.18);
       font-family: $heading-font-family;
       z-index: 0;
+
+      @media (max-width: 1000px) {
+        position: absolute;
+        top: -10rem;
+        left: 0;
+        font-size: 5rem;
+      }
     }
-  }
+    }
+
+  
 }

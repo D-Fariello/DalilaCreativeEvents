@@ -1,0 +1,139 @@
+@use './variables' as *;
+
+@media (max-width: 768px) {
+    .hero {
+      height: auto;
+      padding: 6rem 1.5rem;
+      text-align: center;
+  
+      &__container {
+        h1 {
+          font-size: 2.2rem;
+        }
+  
+        p {
+          font-size: 1rem;
+        }
+  
+        .hero__cta {
+          font-size: 1rem;
+          padding: 0.8rem 1.5rem;
+        }
+      }
+    }
+  
+    .header {
+        flex-wrap: wrap;
+        position: relative; 
+    
+        &__burger {
+          display: block; // ← show on mobile
+        }
+
+        &__logo {
+            font-size: 1.3rem;
+            max-width: 60%;
+            white-space: wrap;
+          }
+    
+        &__nav {
+          flex-direction: column;
+          gap: 1.5rem;
+          width: 100%;
+          background-color: $background-light;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          padding: 2rem 1rem;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(-20px);
+          transition: all 0.3s ease;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+    
+        &__nav.active {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+      }
+    
+    
+    .about {
+      padding: 6rem 1.5rem;
+  
+      &__container {
+        flex-direction: column;
+        gap: 3rem;
+      }
+  
+      &__image img {
+        height: 400px;
+      }
+  
+      &__content h2 {
+        font-size: 2rem;
+      }
+  
+      &::before {
+        font-size: 4rem;
+        top: 2rem;
+      }
+    }
+  
+    .services__container,
+    .testimonials__container,
+    .working__steps,
+    .footer__top {
+      grid-template-columns: 1fr;
+      flex-direction: column;
+    }
+  
+    .service-card,
+    .testimonial-card,
+    .working-step {
+        min-height: 450px;
+    }
+  
+    .contact {
+      padding: 6rem 1.5rem;
+  
+      &::before {
+        font-size: 4rem;
+      }
+  
+      &__intro h2 {
+        font-size: 1.7rem;
+      }
+  
+      &__intro p {
+        font-size: 1rem;
+      }
+    }
+
+    .contact__container {
+        padding: 0 1rem;
+        text-align: center;
+        max-width: 100%;
+      }
+  
+    .footer {
+      padding: 4rem 1.5rem;
+  
+      &__column {
+        flex: 1 1 100%;
+      }
+  
+      &__bottom {
+        margin-top: 2rem;
+        font-size: 0.75rem;
+      }
+
+      .footer__top {
+        flex-direction: column;
+        gap: 0rem;
+      }
+    }
+  }
+  
