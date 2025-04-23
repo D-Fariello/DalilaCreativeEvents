@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.dalilacreative.com/sitemap.xml
+Host: https://www.dalilacreative.com

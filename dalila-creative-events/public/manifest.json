@@ -1,0 +1,22 @@
+{
+    "name": "Dalila Creative",
+    "short_name": "Dalila",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f2f3ef",
+    "theme_color": "#b2967d",
+    "description": "Elegant event experiences curated from the French Riviera",
+    "icons": [
+      {
+        "src": "/icons/icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/icons/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
